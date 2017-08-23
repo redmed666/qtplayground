@@ -5,7 +5,14 @@ import QtQuick.Window 2.2
 MenuBar {
     Menu {
         title: "File"
-        MenuItem { text: "Open..." }
+        MenuItem { 
+            text: "Open..."
+            onTriggered: {
+                var component = Qt.createComponent("mainwindow.qml")
+                var window = component.createObject(root)
+                window.show()
+            }
+        }
         MenuItem { text: "Close" }
     }
 

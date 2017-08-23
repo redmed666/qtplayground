@@ -11,17 +11,20 @@ Rectangle {
     width: 116; height: 26
     color: "lightsteelblue"
     border.color: "slategrey"
+
     Text {
         id: label
         anchors.centerIn: parent
         text: "Start"
     }
+
     MouseArea {
         anchors.fill: parent
         onClicked: {
             root.clicked()
         }
     }
+    
     Button {
         text: qsTr("Hello World")
         onClicked: {

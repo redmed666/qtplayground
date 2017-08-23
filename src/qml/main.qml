@@ -12,6 +12,9 @@ ApplicationWindow {
     MyButton {
     }
 
+    MyMenuBar {
+    }
+
     BackEnd {
         id: backend
     }
